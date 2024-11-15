@@ -7,9 +7,7 @@ Review hetzelfde component bij andere teams en vergelijk jullie ontwerp en uitwe
 
 ### Aanpak
 
-Deze week ben je begonnen met het ontwerpen van een component en het aanleggen van een component-library voor jullie project. Vandaag gaan jullie dezelfde componenten van andere teams reviewen en vergelijk je jullie ontwerp en uitwerking met het Design-system van Decathlon.
-
-De review doe je met je team.
+Deze week ben je begonnen met het ontwerpen van een component en het aanleggen van een component-library voor jullie project. Vandaag gaan jullie dezelfde componenten van andere teams reviewen en vergelijk je jullie ontwerp en uitwerking met het Design-system van Decathlon. De review doe je met je team.
 
 
 #### Voorbereiding
@@ -28,7 +26,7 @@ Bekijk alle gemaakte variaties van het component-ontwerp in Figma en schrijf iss
 
 Decathlon heeft een super uitgebreide styleguide waarin in detail beschreven en gepresenteerd staat hoe de huisstijl moet worden toegepast. Voor het web laten zij verschillende componenten zien, soms zelfs met voorbeeldcode en naamgeving van custom-properties.
 
-Vergelijk de componenten die jullie hebben ontworpen met detzelfde componenten in het [Design-system van Decathlon](https://www.decathlon.design/) (de componenten staan bij digital). Neem tips, tricks en ideeeën van de uitwerking en documentatie op in jullie projectboard.
+Vergelijk de componenten die jullie hebben ontworpen met detzelfde componenten in het [Design-system van Decathlon](https://zeroheight.com/726f8c765/p/93ca3c-component-status). Neem tips, tricks en ideeeën van de uitwerking en documentatie op in jullie projectboard.
 
 
 <!-- 
