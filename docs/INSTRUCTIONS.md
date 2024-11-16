@@ -25,7 +25,7 @@ Fork voor deze opdracht de repo, het is een individuele opdracht waarbij je zelf
 - **Bouwen** Maak het component in Sveltekit.
 - **Testen** Test het component regelmatig op toegankelijkheid, responsive design en performance en verwerk de feedback.
 
-Deze sprint worden twee code/design reviews gedaan:
+Deze sprint worden twee code/design reviews georganiseerd:
 - [Design review component ontwerp](design-review-component.md)
 - [Code review component ontwerp](code-review-component.md))
 
