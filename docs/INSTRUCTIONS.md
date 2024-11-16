@@ -23,7 +23,11 @@ Fork voor deze opdracht de repo, het is een individuele opdracht waarbij je zelf
 - **Analyseren** Inventariseer met je team welke componenten je kan maken voor de opdracht van de opdrachtgever, verdeel componenten die jullie gaan maken op basis van complexiteit.
 - **Ontwerpen** Onderzoek variaties voor jouw component met behulp van een _morphological chart_. Bespreek je ideeen met een docent voordat je verder gaat. Als je een GO hebt gekregen werk je verschillende versie van je component uit in Figma. Maak daarna een breakdownschets met de HTML, CSS en JS code voor het component. Schets hoe je responsive, progressive enhancement, performance en toegankelijkheid toepast.
 - **Bouwen** Maak het component in Sveltekit.
-- **Testen** Test het component regelmatig op toegankelijkheid, responsive design en performance en verwerk de feedback. 
+- **Testen** Test het component regelmatig op toegankelijkheid, responsive design en performance en verwerk de feedback.
+
+Deze sprint worden twee code/design reviews gedaan:
+- [Design review component ontwerp](design-review-component.md)
+- [Code review component ontwerp](code-review-component.md))
 
 ## Criteria
 
