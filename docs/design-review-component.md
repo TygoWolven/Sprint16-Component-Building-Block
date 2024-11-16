@@ -1,6 +1,6 @@
 # Component Building Block
 
-## Design Review Component ontwerp
+## Design Review Component
 
 Review hetzelfde component bij andere teams en vergelijk jullie ontwerp en uitwerking met het Design-system van Decathlon
 

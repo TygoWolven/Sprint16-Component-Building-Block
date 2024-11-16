@@ -1,6 +1,6 @@
 # Component Building Block
 
-## Code Review Component ontwerp
+## Code Review Component
 
 Review de componenten van andere teams
 
