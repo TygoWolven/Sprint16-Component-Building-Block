@@ -1,44 +1,40 @@
 <script>
-    import LogoContainer from "../molecules/LogoContainer.svelte";
+  import LogoContainer from "../molecules/LogoContainer.svelte";
 </script>
 
+<!-- Added aria-labels so screenreaders won't read the list twice -->
 <div class="infinite-carrousel">
-    <LogoContainer />
-    <LogoContainer aria-hidden="true" />
+  <LogoContainer hidden="false" />
+  <LogoContainer hidden="true" />
 </div>
 
 <style>
-    .infinite-carrousel {
-        white-space: nowrap;
-    }
-    .infinite-carrousel:hover :global(.logo-container) {
-        animation-play-state: paused;
-    }
-    .infinite-carrousel::before,
-    .infinite-carrousel::after {
-        position: absolute;
-        z-index: 10;
-        content: "";
-        height: 50px;
-        width: 250px;
-        background: linear-gradient(
-            to right,
-            var(--accent2-primary),
-            transparent
-        );
-        left: 0;
-    }
-    .infinite-carrousel::after {
-        left: unset;
-        right: 0;
-        transform: rotateZ(180deg);
-    }
+  .infinite-carrousel {
+    white-space: nowrap;
+    margin: var(--margin) 0;
+  }
+  .infinite-carrousel:hover :global(.logo-container) {
+    animation-play-state: paused;
+  }
 
-    /* Media Query for small-screens */
-    @media (max-width: 768px) {
-        .infinite-carrousel::before,
-        .infinite-carrousel::after {
-            width: 50px;
-        }
-    }
+  /* Fade-away on sides of the carrousel */
+  .infinite-carrousel::before,
+  .infinite-carrousel::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 15%;
+    z-index: 10;
+    height: clamp(3rem, 5vw, 7rem);
+    background: linear-gradient(
+      to right,
+      white,
+      transparent
+    );
+  }
+  .infinite-carrousel::after {
+    transform: rotateZ(180deg);
+    left: unset;
+    right: 0;
+  }
 </style>

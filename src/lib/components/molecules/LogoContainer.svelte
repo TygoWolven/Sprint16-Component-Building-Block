@@ -1,42 +1,48 @@
 <script>
-    import { Vibe, Lillet, Pernod, Bacardi, Hendricks, Leonista, London, Absolut, Cola, Passoa } from '$lib/assets/partners.js' 
+  // All images
+  import { Vibe, Lillet, Pernod, Bacardi, Hendricks, London, Absolut, CocaCola, Passoa } from '$lib/assets/partners.js' 
+  import Logo from "../atoms/Logo.svelte";
+
+  // Adjustable aria-attribute
+  export let hidden = ''
 </script>
 
-<div class="logo-container">
-    <img src={Vibe} alt="Vibe">
-    <img src={Lillet} alt="Lillet">
-    <img src={Pernod} alt="Pernod Ricard">
-    <img src={Bacardi} alt="Bacardi">
-    <img src={Hendricks} alt="Hendricks Gin">
-    <img src={Leonista} alt="Leonista">
-    <img src={London} alt="The London Essence">
-    <img src={Absolut} alt="Absolut Vodka">
-    <img src={Cola} alt="Coca Cola">
-    <img src={Passoa} alt="Passoa">
-</div>
+<ul class="logo-container" aria-hidden="{hidden}"> 
+  <Logo source='{Vibe}' alt='Vibe' />
+  <Logo source='{Lillet}' alt='Lillet' />
+  <Logo source='{Pernod}' alt='Pernod Ricard' />
+  <Logo source='{Bacardi}' alt='Bacardi' />
+  <Logo source='{Hendricks}' alt='Hendricks Dry Gin' />
+  <Logo source='{London}' alt='The London Essence' />
+  <Logo source='{Absolut}' alt='Absolut Vodka' />
+  <Logo source='{CocaCola}' alt='Coca Cola' />
+  <Logo source='{Passoa}' alt='passoa' />
+</ul>
 
 <style>
-    .logo-container {
-        display: inline-block;
-        animation: 35s slide infinite linear;
-    }
-    .logo-container img {
-        height: 3vw;
-        min-height: 30px;
-        margin: 0 40px;
-    }
-     @keyframes slide {
-        from {
-          transform: translateX(0);
-        }
-        to {
-          transform: translateX(-100%);
-        }
-    }
+  .logo-container {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+  }
 
-    @media (prefers-reduced-motion) {
+  /* Infinite animation for the carrousel */
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  /* Media Query for users with reduced-motion enabled */
+  /* (Didnt use the 'no-preference' for a reason) */  
+  @media (prefers-reduced-motion) {
     .logo-container {
-        animation: none;
+      animation: none;
+    }
+    .logo-container:last-of-type {
+      display: none;
     }
   }
 </style>

@@ -18,23 +18,25 @@
   </h3>
 {/if}
 
+<!-- In de leertaak maak ik gebruik van variabele waardes, die ik hier niet kan gebruiken -->
 <style>
+  h1, h2, h3 {
+    margin-bottom: 1rem;
+  }
   h1 {
-    font-size: var(--fs-2xl) !important;
+    font-size: 3.5rem;
   }
-
   h2 {
-    font-size: var(--fs-lg) !important;
+    font-size: 2.5rem;
   }
-
   h3 {
-    font-size: var(--fs-md) !important;
+    font-size: 1.5rem;
   }
 
   .title-light {
-    color: var(--accent2-primary);
+    color: white;
   }
   .title-dark {
-    color: var(--txt-dark-clr);
+    color: black;
   }
 </style>
